@@ -47,6 +47,7 @@ while(contadorVotos !== 'END'){
 }
 
 alert(resultadosVotacion());
+console.log(resultadosVotacion());
 
 
 function textoVotacion(){
