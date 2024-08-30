@@ -14,7 +14,6 @@ class Encuesta {
         console.log('Votos actuales: ' + opcionEscogida.votos);
     }
 }
-//Esta es una prueba
 
 const nombreEncuesta = prompt('¡Bienvenido al creador de encuestas! Escribe el nombre de la encuesta que desear crear: ');
 const nuevaEncuesta = new Encuesta(nombreEncuesta);
