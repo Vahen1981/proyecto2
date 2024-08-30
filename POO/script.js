@@ -26,6 +26,7 @@ class Encuesta {
 const nombreEncuesta = prompt('¡Bienvenido al creador de encuestas! Escribe el nombre de la encuesta que desear crear: ');
 //Llamamos a la clase "Encuesta" y creamos nuestro objeto
 const nuevaEncuesta = new Encuesta(nombreEncuesta);
+console.log("El nombre de la encuesta es: " + nuevaEncuesta.nombre);
 let numeroOpciones = prompt('¿Cuantas opciones tendrá tu encuesta?');
 //Validamos que sea un número
 while(isNaN(numeroOpciones) || numeroOpciones === ''){
@@ -84,7 +85,7 @@ function textoVotacion(){
 
 //Función para generar el texto con los resultados finales
 function resultadosVotacion(){
-    let textoFinal = 'Votación finalizada. resultados: \n';
+    let textoFinal = 'Votación finalizada. resultados: \n ';
     for(let i = 0 ; i < numeroOpciones ; i++){
         textoFinal = textoFinal + (i+1) + '. ' + nuevaEncuesta.opciones[i].nombre + '\n       ' + 'Votos = ' + nuevaEncuesta.opciones[i].votos + '\n ';
     }
