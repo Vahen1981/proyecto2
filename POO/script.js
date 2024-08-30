@@ -44,6 +44,7 @@ for(let i = 0 ; i < numeroOpciones ; i++){
     //Si todo esta validado se llama al método .agregarOpcion() para crear un nuevo objeto en el array del objeto 
     //creado por la clase "Encuesta"
     nuevaEncuesta.agregarOpcion(opcion, 0);
+    console.log("Opción agregada: " + nuevaEncuesta.opciones[i].nombre);
 }
 //Una vez ingresadas todas las opciones, lanzamos un alert anunciando que se iniciará la votación
 alert('Ingresaste todas las opciones. Se iniciará el sistema de votación');
